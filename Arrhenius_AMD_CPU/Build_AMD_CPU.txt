@@ -1,0 +1,19 @@
+# Build instructions for UppASD on Arrhenius AMD CPU nodes
+
+# Load the build environment
+ml buildtool-easybuild/5.2.1-hpca3ef7d197
+ml gmpflf/2026.03
+ml CMake/4.4.0
+
+# Configure with CMake
+cmake -S . -B build_AMD_CPU
+
+# Build
+cmake --build build_AMD_CPU -j 32
+
+# Alternatively, use one of the CMake preset build configurations
+cmake --preset release
+cmake --build build/release -j 32
+
+# The available preset configurations can be listed with
+cmake --list-presets
