@@ -3,12 +3,12 @@
 # Load the build environment
 ml LUMI/25.09
 ml partition/G
-ml PrgEnv-gnu/8.6.0
-ml rocm/6.4.4
+ml PrgEnv-cray/8.6.0
+ml rocm/7.2.4
 ml craype-accel-amd-gfx90a
 
 # Configure with CMake
-cmake -S . -B build_AMD_GPU \
+cmake -S . -B build_GPU_Cray \
   -DCMAKE_C_COMPILER=cc \
   -DCMAKE_CXX_COMPILER=CC \
   -DCMAKE_Fortran_COMPILER=ftn \
@@ -17,4 +17,4 @@ cmake -S . -B build_AMD_GPU \
   -DCMAKE_HIP_ARCHITECTURES=gfx90a
 
 # Build
-cmake --build build_AMD_GPU -j 32
+cmake --build build_GPU_Cray -j 32
