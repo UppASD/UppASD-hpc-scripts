@@ -3,6 +3,7 @@
 # Load the build environment
 ml use /appl/local/containers/test-modules/
 ml LUMI/25.09
+ml buildtools/25.09
 ml partition/G
 ml PrgEnv-gnu/8.6.0
 ml rocm/7.2.4

@@ -2,6 +2,7 @@
 
 # Load the build environment
 ml LUMI/25.09
+ml buildtools/25.09
 ml partition/G
 ml PrgEnv-cray/8.6.0
 ml rocm/6.4.4
