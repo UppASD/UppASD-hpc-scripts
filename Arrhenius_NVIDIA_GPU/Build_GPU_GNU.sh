@@ -6,14 +6,14 @@ ml gmpichcnvpl/14.3.0
 ml CMake/4.4.0
 
 # Configure with CMake
-cmake -S . -B build_NVIDIA_GPU
+cmake -S . -B build_NVIDIA_GNU
 
 # Build
-cmake --build build_NVIDIA_GPU -j 36
+cmake --build build_NVIDIA_GNU -j 36
 
 # Alternatively, use one of the CMake preset build configurations
-cmake --preset releaseCuda
-cmake --build build/releaseCuda -j 36
+#cmake --preset releaseCuda
+#cmake --build build/releaseCuda -j 36
 
 # The available preset configurations can be listed with
-cmake --list-presets
+#cmake --list-presets
