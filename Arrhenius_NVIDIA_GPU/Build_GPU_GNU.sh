@@ -6,7 +6,7 @@ ml gmpichcnvpl/14.3.0
 ml CMake/4.4.0
 
 # Configure with CMake
-cmake -S . -B build_NVIDIA_GNU
+cmake -S . -B build_NVIDIA_GNU -DUSE_CUDA=1 -DCMAKE_BUILD_TYPE=Release
 
 # Build
 cmake --build build_NVIDIA_GNU -j 36
