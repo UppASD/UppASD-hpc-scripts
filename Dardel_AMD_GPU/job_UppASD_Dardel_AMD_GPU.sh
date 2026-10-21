@@ -7,6 +7,10 @@
 #SBATCH -n 1                  # Number of ranks
 #SBATCH -c 16                 # Number of cpus per task
 
+ml PrgEnv-gnu
+ml rocm/7.2.1
+ml craype-accel-amd-gfx90a
+
 export SD_BINARY=<UppASD executable>
 export OMP_NUM_THREADS=16
 
