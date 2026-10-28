@@ -11,8 +11,8 @@ cmake -S . -B build_AMD_CPU
 cmake --build build_AMD_CPU -j 32
 
 # Alternatively, use one of the CMake preset build configurations
-cmake --preset release
-cmake --build build/release -j 32
+#cmake --preset release
+#cmake --build build/release -j 32
 
 # The available preset configurations can be listed with
-cmake --list-presets
+#cmake --list-presets
