@@ -2,7 +2,7 @@
 
 # Load the build environment
 ml GPU/buildtool-easybuild/5.2.1-hpca3ef7d197
-ml nvmpichcnvpl/14.3.0
+ml nvmpichcnvpl/25.9
 ml CMake/4.4.0
 
 # Configure with CMake
