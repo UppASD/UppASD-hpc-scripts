@@ -6,6 +6,7 @@
 #SBATCH -n 1                  # Number of ranks
 #SBATCH -c 16                 # Number of cpus per task
 
+# The executable is in the bin directory of the build directory, e.g. <UppASD dir>/build_GPU_GNU/bin/sd.hip
 export SD_BINARY=<UppASD executable>
 export OMP_NUM_THREADS=16
 

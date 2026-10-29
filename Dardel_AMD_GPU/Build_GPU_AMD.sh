@@ -17,3 +17,5 @@ cmake -S . -B build_GPU_AMD \
 
 # Build
 cmake --build build_GPU_AMD -j 32
+
+# The executable is placed in build_GPU_AMD/bin

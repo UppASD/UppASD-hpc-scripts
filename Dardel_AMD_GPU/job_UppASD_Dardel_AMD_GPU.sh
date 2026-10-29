@@ -11,6 +11,7 @@ ml PrgEnv-gnu
 ml rocm/7.2.1
 ml craype-accel-amd-gfx90a
 
+# The executable is in the bin directory of the build directory, e.g. <UppASD dir>/build_GPU_GNU/bin/sd.hip
 export SD_BINARY=<UppASD executable>
 export OMP_NUM_THREADS=16
 

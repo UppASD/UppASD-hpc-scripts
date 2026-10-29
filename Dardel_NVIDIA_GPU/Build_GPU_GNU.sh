@@ -13,7 +13,9 @@ cmake -S . -B build_NVIDIA_GNU -DUSE_CUDA=1 -DCMAKE_CXX_STANDARD=20 -DCMAKE_BUIL
 # Build
 cmake --build build_NVIDIA_GNU -j 36
 
-# Optionally install bin, lib, mod and include to <prefix>/bin, <prefix>/lib, ...
+# The executable is placed in build_NVIDIA_GNU/bin
+
+# Optionally install bin, lib and include to <prefix>/bin, <prefix>/lib and <prefix>/include
 # Either add -DCMAKE_INSTALL_PREFIX=<prefix> to the configure line above and run
 #cmake --install build_NVIDIA_GNU
 # or give the prefix directly when installing

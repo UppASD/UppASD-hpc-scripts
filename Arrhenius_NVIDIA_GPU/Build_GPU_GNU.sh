@@ -6,13 +6,18 @@ ml gmpichcnvpl/14.3.0
 ml CMake/4.4.0
 
 # Configure with CMake
-cmake -S . -B build_NVIDIA_GNU -DUSE_CUDA=1 -DCMAKE_BUILD_TYPE=Release
+# UPPASD_CUDA_ARCH=90 targets the H100 (Hopper, sm_90) GPUs of the GH200
+# superchips, so the build does not depend on GPU detection (which fails on nodes
+# without a GPU). Remove build_NVIDIA_GNU first if an earlier configure failed.
+cmake -S . -B build_NVIDIA_GNU -DUSE_CUDA=1 -DCMAKE_BUILD_TYPE=Release -DUPPASD_CUDA_ARCH=90
 
 # Build
 cmake --build build_NVIDIA_GNU -j 36
 
+# The executable is placed in build_NVIDIA_GNU/bin
+
 # Alternatively, use one of the CMake preset build configurations
-#cmake --preset releaseCuda
+#cmake --preset releaseCuda -DUPPASD_CUDA_ARCH=90
 #cmake --build build/releaseCuda -j 36
 
 # The available preset configurations can be listed with

@@ -9,6 +9,7 @@
 
 ml PrgEnv-gnu
 
+# The executable is in the bin directory of the build directory, e.g. <UppASD dir>/build_GNU_CPU/bin/sd
 export SD_BINARY=<UppASD executable>
 export OMP_NUM_THREADS=16
 

@@ -19,3 +19,5 @@ cmake -S . -B build_GPU_GNU \
 
 # Build
 cmake --build build_GPU_GNU -j 32
+
+# The executable is placed in build_GPU_GNU/bin

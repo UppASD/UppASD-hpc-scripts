@@ -1,10 +1,8 @@
 #!/bin/bash
 
+# Each build has its own build directory, with the executable in <build dir>/bin
 ../../UppASD/UppASD-hpc-scripts/Dardel_AMD_GPU/Build_GPU_GNU.sh
-mv bin/sd.hip bin/sd.hip.gpu_gnu
-
 ../../UppASD/UppASD-hpc-scripts/Dardel_AMD_GPU/Build_GPU_AMD.sh
-mv bin/sd.hip bin/sd.hip.gpu_amd
-
 ../../UppASD/UppASD-hpc-scripts/Dardel_AMD_GPU/Build_GPU_Cray.sh
-mv bin/sd.hip bin/sd.hip.gpu_cray
+
+ls -l build_GPU_*/bin/sd.*

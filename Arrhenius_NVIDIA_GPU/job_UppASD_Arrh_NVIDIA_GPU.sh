@@ -7,7 +7,8 @@
 #SBATCH -n 1                  # Number of tasks
 #SBATCH -c 16                 # Number of cpus per task
 
-export SD_BINARY=$SD_BINARY:~/GitProjects/UppASD/UppASD/bin/sd.f95
+# The executable is in the bin directory of the build directory, e.g. <UppASD dir>/build_NVIDIA_GNU/bin/sd.*
+export SD_BINARY=<UppASD executable>
 export OMP_NUM_THREADS=16
 
 echo "Script initiated at `date` on `hostname`"

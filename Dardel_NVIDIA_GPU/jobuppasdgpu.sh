@@ -12,6 +12,7 @@ ml gcc-native/14
 ml cudatoolkit/25.9_13.0
 ml craype-accel-nvidia90
 
+# The executable is in the bin directory of the build directory, e.g. <UppASD dir>/build_NVIDIA_GNU/bin/sd.cuda
 export SD_BINARY= #Set here path to UppASD executable
 export OMP_NUM_THREADS=16
 

@@ -10,6 +10,8 @@ cmake -S . -B build_AMD_CPU
 # Build
 cmake --build build_AMD_CPU -j 32
 
+# The executable is placed in build_AMD_CPU/bin
+
 # Alternatively, use one of the CMake preset build configurations
 #cmake --preset release
 #cmake --build build/release -j 32
