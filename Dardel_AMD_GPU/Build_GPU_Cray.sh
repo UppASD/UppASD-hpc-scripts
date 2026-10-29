@@ -19,3 +19,6 @@ cmake -S . -B build_GPU_Cray \
 cmake --build build_GPU_Cray -j 32
 
 # The executable is placed in build_GPU_Cray/bin
+
+# Run the tests
+(cd build_GPU_Cray && ctest -j 8)

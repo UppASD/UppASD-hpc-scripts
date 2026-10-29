@@ -22,3 +22,6 @@ cmake -S . -B build_GPU_AMD_rocm724 \
 cmake --build build_GPU_AMD_rocm724 -j 32
 
 # The executable is placed in build_GPU_AMD_rocm724/bin
+
+# Run the tests
+(cd build_GPU_AMD_rocm724 && ctest -j 8)

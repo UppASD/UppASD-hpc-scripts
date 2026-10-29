@@ -16,9 +16,13 @@ cmake --build build_NVIDIA_NVHPC -j 36
 
 # The executable is placed in build_NVIDIA_NVHPC/bin
 
+# Run the tests
+(cd build_NVIDIA_NVHPC && ctest -j 8)
+
 # Alternatively, use one of the CMake preset build configurations
 #cmake --preset releaseCuda -DUPPASD_CUDA_ARCH=90
 #cmake --build build/releaseCuda -j 36
+#(cd build/releaseCuda && ctest -j 8)
 
 # The available preset configurations can be listed with
 #cmake --list-presets

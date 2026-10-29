@@ -21,3 +21,6 @@ cmake -S . -B build_GPU_GNU \
 cmake --build build_GPU_GNU -j 32
 
 # The executable is placed in build_GPU_GNU/bin
+
+# Run the tests
+(cd build_GPU_GNU && ctest -j 8)
