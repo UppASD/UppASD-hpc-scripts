@@ -12,5 +12,6 @@ cd ASD_GUI
 pip install .
 
 # To use the ASD_GUI
+#ml qt/6.7.2
 #. asd_gui_env/bin/activate
 #asd_gui
